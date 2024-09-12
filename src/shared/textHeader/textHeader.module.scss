@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "normalidad";
+  src: url("../../fonts/normalidad-var.ttf") format("ttf");
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 83px;
+}
+
+.h1 {
+  font-family: "normalidad", sans-serif;
+  font-size: 96px;
+  letter-spacing: -0.04em;
+  color: #32353e;
+  font-weight: 600;
+}
+.text {
+  font-family: "normalidad", sans-serif;
+  font-weight: 507;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  color: #32353e;
+}
+@media (max-width: 1352px) {
+  .container {
+    margin-left: 24px;
+  }
+  .h1 {
+    font-size: 55px;
+  }
+  .text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin-left: 20px;
+    // max-width: 285px;
+  }
+  .h1 {
+    font-size: 45px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    margin-left: 20px;
+    max-width: 380px;
+  }
+  .h1 {
+    font-size: 34px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 524px) {
+  .container {
+    margin-left: 20px;
+    max-width: 380px;
+  }
+  .h1 {
+    font-size: 28px;
+  }
+  .text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 445px) {
+  .container {
+    margin-left: 20px;
+    max-width: 280px;
+  }
+  .h1 {
+    font-size: 28px;
+  }
+  .text {
+    font-size: 13px;
+  }
+}

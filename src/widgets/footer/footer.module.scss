@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../fonts/CeraPro-Medium.woff") format("woff");
+}
+.container {
+  padding: 28px 84px 28px 64px;
+  min-height: 224px;
+  background: #32353e;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.main_footer__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+.logo {
+  width: 119px;
+  height: 105px;
+}
+.navigation__container {
+  width: 100%;
+  max-width: 699px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.contacts__container {
+  width: 100%;
+  max-width: 175px;
+}
+.protected {
+  font-family: "CeraPro", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.04em;
+  color: #959595;
+  margin-left: 21px;
+}
+.right__container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+@media (max-width: 1160px) {
+  .container {
+    padding: 20px 21px 15px 8px;
+  }
+}
+@media (max-width: 730px) {
+  .right__container {
+    flex-direction: column;
+    max-width: 175px;
+    gap: 20px;
+  }
+  .navigation__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

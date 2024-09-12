@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../fonts/CeraPro-Medium.woff") format("woff");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  gap: 8px;
+}
+.text {
+  font-family: "CeraPro", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #fff;
+  &[href^="tel"] {
+    color: #fff;
+  }
+}

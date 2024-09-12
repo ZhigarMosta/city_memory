@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "normalidad";
+  src: url("../../fonts/normalidad-var.ttf") format("ttf");
+}
+
+.container {
+  border-left: 4px solid #b1d8ec;
+  border-radius: 17px;
+  padding: 10px 15px;
+  width: 467px;
+  height: 53px;
+  background: #ebf6fb;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.text {
+  font-family: "normalidad", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 389px;
+  }
+}
+@media (max-width: 429px) {
+  .container {
+    width: 320px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 270px;
+  }
+}

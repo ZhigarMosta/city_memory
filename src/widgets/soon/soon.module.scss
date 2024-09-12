@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  padding: 60px 0;
+}
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1440px) {
+  .card__container {
+    justify-content: center;
+  }
+}
+@media (max-width: 1439px) {
+  .card__container {
+    gap: 10px;
+  }
+}

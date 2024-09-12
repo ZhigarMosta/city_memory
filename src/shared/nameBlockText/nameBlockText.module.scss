@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "normalidad";
+  src: url("../../fonts/normalidad-var.ttf") format("ttf");
+}
+.text {
+  font-family: "normalidad", sans-serif;
+  font-weight: 1;
+  font-size: 26px;
+  letter-spacing: -0.04em;
+  color: #000;
+}

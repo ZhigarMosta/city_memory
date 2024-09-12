@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../fonts/CeraPro-Medium.woff") format("woff");
+}
+.container {
+  max-width: 400px;
+  // min-height: 400px;
+  width: 100%;
+  height: 100%;
+}
+.img {
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  width: 400px;
+  height: 227px;
+  width: 100%;
+  height: 100%;
+}
+.text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  background: #e6f7ff;
+  padding: 18px 31px 40px 18px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+.text__name {
+  font-family: "CeraPro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.04em;
+  color: #000;
+}
+.text__deckription {
+  font-family: "CeraPro", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #444;
+}
+@media (max-width:1389px) {
+	.img {
+		height: 150px;
+	}
+}
