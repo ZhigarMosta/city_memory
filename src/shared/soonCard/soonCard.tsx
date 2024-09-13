@@ -16,7 +16,7 @@ const SoonCard: React.FC<SoonCardProps> = ({
 }) => {
   return (
     <div className={style.container}>
-      <Image src={img} alt="нововведение" className={style.img}/>
+      <Image src={img} alt="нововведение" className={style.img} />
       <div className={style.text__container}>
         <div className={style.text__name}>{text__name}</div>
         <div className={style.text__deckription}>{text__deckription}</div>

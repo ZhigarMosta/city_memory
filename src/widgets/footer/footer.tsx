@@ -3,8 +3,8 @@ import React from "react";
 import style from "./footer.module.scss";
 import Image from "next/image";
 import logo from "./../../img/logo.svg";
-import MenuText from "@/shared/menuText/menuText";
 import Contacts from "@/shared/contacts/contacts";
+import NavFooter from "@/shared/navFooter/navFooter";
 
 const Footer = () => {
   return (
@@ -13,10 +13,10 @@ const Footer = () => {
         <Image src={logo} alt="logo" className={style.logo} />
         <div className={style.right__container}>
           <div className={style.navigation__container}>
-            <MenuText text="Об Организации" />
-            <MenuText text="Новости" />
-            <MenuText text="Контакты" />
-            <MenuText text="Помочь" />
+            <NavFooter text="Об Организации" />
+            <NavFooter text="Новости" />
+            <NavFooter text="Контакты" />
+            <NavFooter text="Помочь" />
           </div>
           <div className={style.contacts__container}>
             <Contacts />
