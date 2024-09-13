@@ -30,7 +30,9 @@
   justify-content: center;
   padding-top: 18vh;
 }
-
+.gray {
+  background-color: #32353e;
+}
 @media (max-width: 1300px) {
   .img {
     background-image: url("../../img/2.png");
