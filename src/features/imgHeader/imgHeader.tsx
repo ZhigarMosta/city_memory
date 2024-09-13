@@ -6,7 +6,8 @@ import ArrowHeader from "../../shared/arrowHeader/arrowHeader";
 
 const ImgHeader = () => {
   return (
-    <div className={style.gray}>
+    <div>
+      <div className={style.grey__block}></div>
       <div className={style.img}>
         <TextHeader />
         <div className={style.shadow}>
