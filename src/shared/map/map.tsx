@@ -38,7 +38,6 @@ const Map: React.FC = () => {
       if (mapContainer) {
         mapContainer.innerHTML = "";
       }
-
       const myMap = new window.ymaps.Map("map", {
         center: [55.15, 61.35],
         zoom: 10,
