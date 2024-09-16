@@ -1,12 +1,16 @@
 import Soon from "@/widgets/soon/soon";
 import style from "./page.module.scss";
-import Card from "@/widgets/card/card";
+import Map from "@/widgets/map/map";
+import Opening from "@/features/imgHeader/opening";
 
 export default function Home() {
   return (
-    <div className={style.container}>
-      <Card />
-      <Soon />
+    <div>
+      <Opening />
+      <div className={style.container}>
+        <Map />
+        <Soon />
+      </div>
     </div>
   );
 }

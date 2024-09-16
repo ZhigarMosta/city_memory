@@ -28,7 +28,7 @@
   width: 100%;
   align-items: center;
 }
-.logo__wrappehandleScrollr {
+.logo__wrapper{
   display: flex;
   align-items: center;
 }
@@ -37,13 +37,6 @@
   max-width: 520px;
   display: flex;
   justify-content: space-between;
-}
-
-.logo__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 75px;
 }
 .menu_toggle {
   display: none;
@@ -89,7 +82,7 @@
 }
 
 @media (max-width: 450px) {
-  .logo__wrappehandleScrollr {
+  .logo__wrapper {
     display: flex;
     width: 100%;
     max-width: 550px;
@@ -123,10 +116,6 @@
   .menu:last-child {
     border-bottom-left-radius: 27px;
     border-bottom-right-radius: 27px;
-  }
-  .logo__wrapper {
-    justify-content: space-between;
-    padding: 0 20px;
   }
   .menu_toggle:checked ~ .wrapper {
     top: 0;

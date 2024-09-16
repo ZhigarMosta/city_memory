@@ -1,16 +1,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import style from "./map.module.scss";
-import Image from "next/image";
-import imgCross from "./../../img/cross.svg";
+import style from "./ChelyabinskMap.module.scss";
 
 import ImgKirova from "./../../img/street/Kirov.jpg";
 import ImgZviling from "./../../img/street/Zviling.jpg";
 import ImgPRLenina from "./../../img/street/PRLenina.jpg";
 import ImgKarlMarcsa from "./../../img/street/KarlMarcsa.jpg";
 import ImgVorovscogo from "./../../img/street/Vorovscogo.jpg";
+import ModalMemory from "@/shared/modalMemory/modalMemory";
 
-const Map: React.FC = () => {
+const ChelyabinskMap: React.FC = () => {
+  const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
   const [modalMessage, setModalMessage] = useState<string | null>(null);
   const [modalImg, setModalImg] = useState<any | null>(null);
   const [modalName, setModalName] = useState<string | null>(null);
@@ -42,8 +42,8 @@ const Map: React.FC = () => {
         mapContainer.innerHTML = "";
       }
       const myMap = new window.ymaps.Map("map", {
-        center: [55.15, 61.35],
-        zoom: 10,
+        center: [55.160346, 61.402786],
+        zoom: 12,
         controls: [
           "zoomControl", // Контрол масштабирования
           "fullscreenControl", // Кнопка полноэкранного режима
@@ -76,6 +76,7 @@ const Map: React.FC = () => {
 
       kirov.events.add("click", () => {
         document.body.classList.add(style.modal__open);
+				setModalIsOpen(true)
         setModalMessage(
           "Названа в честь Кирова Сергея Мироновича (1886-1934) – русского революционера времён Гражданской войны. Изначально поддерживал Временное правительство, и отдавал предпочтение белому движению. Но после Октябрьской революции перешёл на сторону большевиков. Занимал должность первого секретаря Ленинградского губернского комитета партии ЦК ВКП(б). Киров участвовал в борьбе со сторонниками Зиновьева и Каменева – оппозиционерами Сталина. Однако, 1 декабря 1934 года Кирова застрелили в Смольном институте. Стрелявшим являлся Леонид Николаев. Леонид Николаев являлся одним из малозначительных членов партии. Есть несколько версий мотива преступления – убийство по личным мотивам (были слухи, что жена Николаева имела близкую связь с Кировым), убийство организовала группа Зиновьева-Каменева, убийство организовал сам Сталин для повода проведения репрессий. В любом случае, Сталин воспользовался убийством и возвёл Кирова в жертву заговора, организованного оппозиционерами."
         );
@@ -141,6 +142,7 @@ const Map: React.FC = () => {
 
       zviling.events.add("click", () => {
         document.body.classList.add(style.modal__open);
+				setModalIsOpen(true)
         setModalMessage(
           "Названа в честь Самуила Яковлевича Цвиллинга (1891-1918) – уральского революционера, главы Исполкома Уральской области. Самуил Цвиллинг с юношества являлся народником. В 14 лет участвовал в революционных движениях в Тобольске. В 1905 году в разгар первой русской революции вступил в РСДРП. За участие в митингах отбывал 5 лет в заключении. В 1912 году, освободившись, вёл революционную деятельность в ряде городов Урала. Был призван на Первую Мировую войну. Служил в запасе в Челябинске, имея подпольные связи с “соц-демами”. Вёл агитацию среди солдат. С 1917 года был председателем Исполкома Совета. Участвовал в создании Партийной организации. Стал пропагандистом идей Ульянова. Стал руководителем Исполкома Уральской области. В декабре 17 года арестован был белыми, но сбежал. Организовал боевой отряд и погиб в бою с казацким атаманом Карнауховым."
         );
@@ -189,6 +191,7 @@ const Map: React.FC = () => {
 
       PRLenina.events.add("click", () => {
         document.body.classList.add(style.modal__open);
+				setModalIsOpen(true)
         setModalMessage(
           "Названа в честь Владимира Ильича Ленина (1870-1924) – российского и советского революционера, лидера большевистского движения времён Гражданской войны, публициста и идеолога, первого правителя и основателя СССР. Владимир Ленин является одной из знаковых фигур XX века, один из главных представителей марксистской идеологии. Был в эмиграции в разных странах Европы, именно там издал свои главные труды, возвращался в Россию, но в 1908 году снова эмигрировал. После Февральской революции вернулся в Россию и возглавил движение Большевиков, выдвинул апрельские тезисы. После конфликта с Временным правительством, скрывался в Финляндии. В событиях Октябрьской революции 1917 года Ленин сыграл главную роль в свержении Временного правительства, создании Совета народных комиссаров и начале Гражданской войны в России, в которой смогли удержать власть и победить белое движение. Умер в 1924 году, после длительной болезни. Тело Ленина помещено в мавзолей на Красной площади в Москве."
         );
@@ -230,6 +233,7 @@ const Map: React.FC = () => {
 
       KarlMarcsa.events.add("click", () => {
         document.body.classList.add(style.modal__open);
+				setModalIsOpen(true)
         setModalMessage(
           "Названа в честь Карла Генриха Маркса (1818-1883) - немецкого философа, публициста, создателя Маркистской теории. Мировоззрение Маркса формировалось под влиянием идей Просвещения, Гегеля, Спинозы, французских социалистических учений. После женитьбы на баронессе, переехал в Париж, где издал ряд трудов. В 1842 году познакомился с Фридрихом Энгельсом. Вместе они публикуют труды, критикующие немецкий идеализм. В 1847 году вступил в Союз Справедливых, который позже с Энгельсом преобразует в Союз Коммунистов. После Французской революции 1848 года возвращается в Германию и активно начинает издавать труды. Но главный свой труд – Капитал. Критика политической экономики, он написал в 1867 году. Данный труд будет одним из основных, на которые опирался Владимир Ленин и другие идеологи большевизма в России во времена революции, и она станет одной из основных и наиболее почётных трудов в СССР. "
         );
@@ -276,6 +280,7 @@ const Map: React.FC = () => {
 
       Vorovscogo.events.add("click", () => {
         document.body.classList.add(style.modal__open);
+				setModalIsOpen(true)
         setModalMessage(
           "Названа в честь Воровского Вацлава Вацлавовича (1871-1923) - русского революционера. Воровский с детства занимался провокационной деятельностью. Учился в Московском университете. Вёл революционную деятельность с 1894 года со вступление в РСДРП. Был в ссылке в Вологде и Вятке. Из ссылки Перебрался в Женеву и там стал участником большевиков. В 1903 году прибыл в Одессу для подпольной деятельности Воровский занимался публицистикой. Он перебрался в Петроград и работал обычным инженером, но был популярной персоной в газете. Имел дружеские отношения с некоторыми поэтами, но также и негативные. Воровский стал настоящим писателем, критиком и литератором. В 1921 году – полпред в Италии. Принимал участие в Генуэзской конференции. В мае 1923 года Воровский был убит в Швейцарии Морисом Конради – противником большевиков. Похоронен в братской могиле в Москве."
         );
@@ -294,42 +299,25 @@ const Map: React.FC = () => {
   }, []);
 
   const closeModal = () => {
-    setModalMessage(null);
+    document.body.classList.remove(style.modal__open);
+    setModalIsOpen(false);
   };
 
   return (
     <div>
       <div id="map" className={style.map}></div>
-      {modalMessage && (
-        <div className={style.modal__container}>
-          <div className={style.modal}>
-            <button
-              className={style.close}
-              onClick={() => {
-                document.body.classList.remove(style.modal__open);
-                closeModal();
-              }}
-            >
-              <Image className={style.cross} src={imgCross} alt="Close" />
-            </button>
-            <Image src={modalImg} alt="Объект" className={style.img} />
-            <div className={style.content_text__container}>
-              <div className={style.content_first}>
-                <div className={style.name}>{modalName}</div>
-                <div className={style.year}>{modalYear}</div>
-              </div>
-              {modalPreviously ? (
-                <div className={style.previously}>{modalPreviously}</div>
-              ) : null}
-              <div className={style.main__container}>
-                <div className={style.main}>{modalMessage}</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {modalIsOpen && (
+        <ModalMemory
+          closeModal={closeModal}
+          img={modalImg}
+          nameLocation={modalName}
+          year={modalYear}
+          previously={modalPreviously}
+          message={modalMessage}
+        />
       )}
     </div>
   );
 };
 
-export default Map;
+export default ChelyabinskMap;

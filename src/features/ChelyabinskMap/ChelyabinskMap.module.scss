@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../fonts/CeraPro-Medium.woff") format("woff");
+}
+.map {
+  width: 100%;
+  height: 626px;
+}
+.modal__open {
+  overflow: hidden;
+}

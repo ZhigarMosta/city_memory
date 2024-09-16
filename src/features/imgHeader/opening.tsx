@@ -4,7 +4,7 @@ import style from "./imgHeader.module.scss";
 import TextHeader from "../../shared/textHeader/textHeader";
 import ArrowHeader from "../../shared/arrowHeader/arrowHeader";
 
-const ImgHeader = () => {
+const Opening = () => {
   return (
     <div>
       <div className={style.grey__block}></div>
@@ -18,4 +18,4 @@ const ImgHeader = () => {
   );
 };
 
-export default ImgHeader;
+export default Opening;

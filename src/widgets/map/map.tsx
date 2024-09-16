@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import style from "./card.module.scss";
+import style from "./map.module.scss";
 import Chelyabinsk from "@/shared/сhelyabinsk/сhelyabinsk";
-import Map from "@/shared/map/map";
-const Card = () => {
+import ChelyabinskMap from "@/features/ChelyabinskMap/ChelyabinskMap";
+const Map = () => {
   return (
     <div className={style.container}>
       <Chelyabinsk />
-      <Map />
+      <ChelyabinskMap/>
     </div>
   );
 };
 
-export default Card;
+export default Map;
