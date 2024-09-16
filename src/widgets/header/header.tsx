@@ -6,7 +6,7 @@ import ImgHeader from "@/features/imgHeader/imgHeader";
 const Header = () => {
   return (
     <div>
-      {/* <MenuHeader /> */}
+      <MenuHeader />
       <ImgHeader />
     </div>
   );

@@ -61,3 +61,8 @@
     gap: 20px;
   }
 }
+@media (max-width: 500px) {
+  .right__container {
+    max-width: 140px;
+  }
+}
