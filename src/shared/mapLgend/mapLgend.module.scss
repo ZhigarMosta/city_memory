@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../fonts/CeraPro-Medium.woff") format("woff");
+}
+
+.text {
+  font-family: "CeraPro", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #959595;
+	margin-top: 10px;
+  .shaded {
+    color: #52a4a4;
+  }
+}

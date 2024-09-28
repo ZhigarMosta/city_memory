@@ -13,15 +13,15 @@
   z-index: 30000;
 }
 .modal {
-  padding: 15px;
-  z-index: 4;
+  // padding: 15px;
+  z-index: 31000;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   top: 50%;
-
-  margin-top: -283.125px; //отнимаем на полвину высоты, чтобы модалка была идеально по центру
-  width: 100%;
+  margin-top: calc(
+    -45.7vh + -7.5px
+  ); //отнимаем на полвину высоты, чтобы модалка была идеально по центру
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,8 +29,7 @@
 }
 .close {
   position: absolute;
-  //margin-left: 350px;
-  margin: -45px 0 0 430px;
+  margin: 0 0 0 53.5vw;
   .cross {
     min-width: 40px;
     height: 40px;
@@ -39,8 +38,8 @@
 .img {
   border-radius: 27px;
   width: 100%;
-  max-width: 411px;
-  height: 207px;
+  max-width: 50vw;
+  height: 40vh;
 }
 .content_text__container {
   display: flex;
@@ -48,29 +47,39 @@
   gap: 10px;
   background: #e6f7ff;
   border-radius: 27px;
-  padding: 15px;
-  max-width: 411px;
+  padding: 25px;
+  max-width: 50vw;
+  height: 50vh;
 }
 .content_first {
   display: flex;
-	gap: 10px;
+  gap: 10px;
   width: 100%;
   justify-content: space-between;
+	flex-wrap: wrap;
 }
 .main__container {
   width: 100%;
-  max-width: 411px;
-  height: 200px;
+  height: 50vh;
   overflow-y: auto;
   padding-right: 8px;
 }
-.name,
+.name {
+  font-family: "CeraPro", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: -0.04em;
+  color: #000;
+}
 .year {
   font-family: "CeraPro", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   letter-spacing: -0.04em;
-  color: #000;
+  color: gray;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 .previously {
   font-family: "CeraPro", sans-serif;
@@ -100,24 +109,35 @@
   background-color: #444;
   border-radius: 15px;
 }
-
-@media (max-width: 465px) {
+@media (max-width: 1100px) {
+  .modal {
+    width: 70%;
+  }
+  .img,
+  .content_text__container {
+    max-width: 70vw;
+  }
   .close {
-    margin: -45px 0 0 380px;
+    margin: 0 0 0 75.5vw;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
+	.modal {
+    width: 80%;
+  }
+  .img,
+  .content_text__container {
+    max-width: 80vw;
+  }
   .close {
-    margin: -45px 0 0 350px;
+    margin: 0 0 0 87.5vw;
+  }
+  .name {
+    font-size: 25px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .close {
-    margin: -45px 0 0 320px;
-  }
-}
-@media (max-width: 350px) {
-  .close {
-    margin: -45px 0 0 290px;
+    margin: 0 0 0 90.5vw;
   }
 }

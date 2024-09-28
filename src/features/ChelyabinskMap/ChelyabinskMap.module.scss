@@ -2,9 +2,13 @@
   font-family: "CeraPro";
   src: url("../../fonts/CeraPro-Medium.woff") format("woff");
 }
+.map__container {
+  border: solid 5px #b1d8ec;
+  border-radius: 5px;
+}
 .map {
   width: 100%;
-  height: 626px;
+  height: calc(85vh - 70px);
 }
 .modal__open {
   overflow: hidden;

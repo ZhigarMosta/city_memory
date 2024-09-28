@@ -1,8 +1,8 @@
-.container {
+.wrapper {
+  padding: 60px 0;
+}
+.container__map {
   display: flex;
   flex-direction: column;
   gap: 42px;
-  padding: 60px 0;
 }
-// rgba(101, 189, 235, 0.5)
-// rgba(219, 242, 253, 0.5)

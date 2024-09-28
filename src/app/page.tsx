@@ -1,6 +1,6 @@
 import Soon from "@/widgets/soon/soon";
 import style from "./page.module.scss";
-import Map from "@/widgets/map/map";
+import Map from "../widgets/map/map";
 import Opening from "@/features/imgHeader/opening";
 
 export default function Home() {

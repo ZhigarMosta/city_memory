@@ -48,7 +48,7 @@ const Header = () => {
         </div>
         <div className={style.wrapper}>
           <div className={style.menu}>
-            <MenuText text="Об Организации" />
+            <MenuText text="О нас" />
             <MenuText text="Новости" />
             <MenuText text="Контакты" />
             <MenuText text="Помочь" />
